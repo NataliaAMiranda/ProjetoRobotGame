@@ -6,8 +6,8 @@ from ev3dev.ev3 import *
 from time import sleep
 
 #Testando os parametros que serão lidos no servidor web
-dire = 1;
-steps = 1;
+dire = 1
+steps = 1
 
 #Instanciado um objeto da classe movimento
 mov = movimento(dire,steps)
