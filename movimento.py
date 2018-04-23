@@ -23,7 +23,8 @@ class movimento(object):
     while not self.ts.value():
       angle = self.gy.value()
       print(str(angle) + " " + self.units)
-      self.mA.run_timed(time_sp = 500, speed_sp = 80)
+      #self.mA.run_timed(time_sp = 500, speed_sp = 80)
+      self.mA.run-to-abs-pos(posicion_sp = 90)
       if angle >= 85:
         self.mA.stop(stop_action = "brake")
         break
@@ -35,7 +36,8 @@ class movimento(object):
     while not self.ts.value():
       angle = self.gy.value()
       print(str(angle) + " " + self.units)
-      self.mA.run_timed(time_sp = 500, speed_sp = 80)
+      #self.mA.run_timed(time_sp = 500, speed_sp = 80)
+      self.mA.run-to-abs-pos(posicion_sp = 180)
       if angle >= 174:
         self.mA.stop(stop_action = "brake")
         break
@@ -47,7 +49,8 @@ class movimento(object):
       print("Virou para o leste")
       angle = self.gy.value()
       print(str(angle) + " " + self.units)
-      self.mD.run_timed(time_sp = 500, speed_sp = 80)
+      #self.mD.run_timed(time_sp = 500, speed_sp = 80)
+      self.mD.run-to-abs-pos(posicion_sp = 90)
       if angle <= -85:
         self.mD.stop(stop_action = "brake")
         break
@@ -61,28 +64,31 @@ class movimento(object):
       sleep(2)
     
   def alinhar(self):
-    if self.dir== 2:
+    if self.dir == 2:
       while not self.ts.value():
         print("Virou para o leste")
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
-        self.mD.run_timed(time_sp = 500, speed_sp = 80)
+        self.mD.run-to-abs-pos(posicion_sp = 90)
+        #self.mD.run_timed(time_sp = 500, speed_sp = 80)
         if angle <= 1:
           self.mD.stop(stop_action = "brake")
           break
-    elif self.dir== 4:
+    elif self.dir == 4:
       while not self.ts.value():
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
+        self.mA.run-to-abs-pos(posicion_sp = 90)
         self.mA.run_timed(time_sp = 500, speed_sp = 80)
         if angle >= 360:
           self.mA.stop(stop_action = "brake")
           break
-    elif self.dir==3:
+    elif self.dir ==3:
       while not self.ts.value():
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
-        self.mA.run_timed(time_sp = 500, speed_sp = 80)
+        self.mA.run-to-abs-pos(posicion_sp = 180)
+        #self.mA.run_timed(time_sp = 500, speed_sp = 80)
         if angle >= -1:
           self.mA.stop(stop_action = "brake")
           break
