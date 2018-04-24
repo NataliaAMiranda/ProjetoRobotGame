@@ -1,5 +1,3 @@
-#/usr/bin/python3
-
 from ev3dev.ev3 import *
 from time import sleep
 
@@ -24,7 +22,6 @@ class movimento(object):
       angle = self.gy.value()
       print(str(angle) + " " + self.units)
       self.mA.run_timed(time_sp = 500, speed_sp = 80)
-      #self.mA.run-to-abs-pos(posicion_sp = 90)
       if angle >= 85:
         self.mA.stop(stop_action = "brake")
         break
@@ -36,7 +33,6 @@ class movimento(object):
       angle = self.gy.value()
       print(str(angle) + " " + self.units)
       self.mA.run_timed(time_sp = 500, speed_sp = 80)
-      #self.mA.run-to-abs-pos(posicion_sp = 180)
       if angle >= 174:
         self.mA.stop(stop_action = "brake")
         break
@@ -49,7 +45,6 @@ class movimento(object):
       angle = self.gy.value()
       print(str(angle) + " " + self.units)
       self.mD.run_timed(time_sp = 500, speed_sp = 80)
-      #self.mD.run-to-abs-pos(posicion_sp = 90)
       if angle <= -85:
         self.mD.stop(stop_action = "brake")
         break
@@ -68,7 +63,6 @@ class movimento(object):
         print("Virou para o leste")
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
-        #self.mD.run-to-abs-pos(posicion_sp = 90)
         self.mD.run_timed(time_sp = 500, speed_sp = 80)
         if angle <= 1:
           self.mD.stop(stop_action = "brake")
@@ -77,7 +71,6 @@ class movimento(object):
       while not self.ts.value():
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
-        #self.mA.run-to-abs-pos(posicion_sp = 90)
         self.mA.run_timed(time_sp = 500, speed_sp = 80)
         if angle >= 360:
           self.mA.stop(stop_action = "brake")
@@ -86,7 +79,6 @@ class movimento(object):
       while not self.ts.value():
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
-        #self.mA.run-to-abs-pos(posicion_sp = 180)
         self.mA.run_timed(time_sp = 500, speed_sp = 80)
         if angle >= -1:
           self.mA.stop(stop_action = "brake")
