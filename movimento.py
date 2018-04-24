@@ -30,8 +30,7 @@ class movimento(object):
         break
       sleep(0.25)
       self.andar()
-      self.alinhar(2)
-    
+      
   def sul(self):
     while not self.ts.value():
       angle = self.gy.value()
@@ -43,8 +42,7 @@ class movimento(object):
         break
       sleep(0.25)
       self.andar()
-      self.alinhar(3)
-    
+      
   def leste(self):
     while not self.ts.value():
       print("Virou para o leste")
@@ -56,7 +54,6 @@ class movimento(object):
         self.mD.stop(stop_action = "brake")
         break
       self.andar()
-      self.alinhar(4)
          
   def andar(self):
     for x in range(0, self.steps):
