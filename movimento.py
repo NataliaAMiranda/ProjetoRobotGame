@@ -26,7 +26,6 @@ class movimento(object):
         self.mA.stop(stop_action = "brake")
         break
       sleep(0.25)
-      self.andar()
       
   def sul(self):
     while not self.ts.value():
@@ -37,7 +36,6 @@ class movimento(object):
         self.mA.stop(stop_action = "brake")
         break
       sleep(0.25)
-      self.andar()
       
   def leste(self):
     while not self.ts.value():
@@ -48,7 +46,6 @@ class movimento(object):
       if angle <= -85:
         self.mD.stop(stop_action = "brake")
         break
-      self.andar()
          
   def andar(self):
     for x in range(0, self.steps):
@@ -58,7 +55,7 @@ class movimento(object):
       sleep(2)
     
   def alinhar(self):
-    if self.dir == 2:
+    if self.dir== 2:
       while not self.ts.value():
         print("Virou para o leste")
         angle = self.gy.value()
@@ -67,7 +64,7 @@ class movimento(object):
         if angle <= 1:
           self.mD.stop(stop_action = "brake")
           break
-    elif self.dir == 4:
+    elif self.dir== 4:
       while not self.ts.value():
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
@@ -75,7 +72,7 @@ class movimento(object):
         if angle >= 360:
           self.mA.stop(stop_action = "brake")
           break
-    elif self.dir ==3:
+    elif self.dir==3:
       while not self.ts.value():
         angle = self.gy.value()
         print(str(angle) + " " + self.units)
