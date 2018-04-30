@@ -18,7 +18,7 @@ oper = [
           'dir' : 0,
           'steps' : 0,
           'novojogo': True,
-          'novajogada': True
+          'novajogada': False
           },
 ]
 
