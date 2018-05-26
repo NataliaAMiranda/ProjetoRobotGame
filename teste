@@ -1,5 +1,5 @@
 body {
-	font-family: "Open Sans Condensed", sans-serif;
+	font-family: "Crimson Text", "vernada", serif;
 	background-color: #000000;
 	font-size: 120%;
 }
@@ -13,14 +13,10 @@ main h1 { /*onde está a imagem do cabeçalho*/
 footer { /*rodapé*/
 	background-color: #A9A9A9;
 	color: #000000;
-	position:absolute;
-    bottom:-200px;
-    width:100%;
 }
 
 main a {
 	color: #A9A9A9;
-	font-family:"Open Sans Condensed", sans-serif;
 }
 
 /*
@@ -39,7 +35,7 @@ main a {
 	border-top-left-radius:6px;
 	-webkit-border-top-right-radius:6px;
 	-moz-border-radius-topright:6px;
-	border-top-right-radius:6px;a
+	border-top-right-radius:6px;
 	-webkit-border-bottom-right-radius:6px;
 	-moz-border-radius-bottomright:6px;
 	border-bottom-right-radius:6px;
@@ -50,8 +46,8 @@ main a {
 	border:1px solid #dcdcdc;
 	display:inline-block;
 	color:#777777;
-	font-family:"Open Sans Condensed", sans-serif;
-	font-size:30px;
+	font-family:verdana;
+	font-size:20px;
 	font-weight:bold;
 	font-style:normal;
 	line-height:180px;
@@ -185,102 +181,10 @@ div {
     font-weight:bold;
 }
 
-
-/*
- * Estilo tabela e botão controle de partida
- * -------------------------------------------------------- */
-#buttoncontrol {
-	font-size:20px;
-	width:400px;
-}
-
-#posicaoTabela {
-	width:400px;
-	float:left;
-	position: absolute;
-	bottom:-345px;
-	left: 50%; /* posiciona na metade da tela */
-	margin-left: -555px; /* e retrocede metade da largura */
-	background-color:white; 
-}
-
-#posicaoButton {
-	background-color:black; 
-	width:400px;
-	float:left;
-	position:absolute;
-	bottom:-390px;
-	left: 50%; /* posiciona na metade da tela */
-	margin-left: 120px; /* e retrocede metade da largura */
-}
-
- #mapa {
-	background-color:white;
-	height:200px;
-	width:400px;
-	float:left;
-	position:absolute;
-	bottom:-120px;
-	left: 50%; /* posiciona na metade da tela */
-	margin-left: 140px; /* e retrocede metade da largura */
- }
-
 /*
  * Estilo tabela modo da partida
  * -------------------------------------------------------- */
-.cordefundo {
-	background-color: black; 
-}
 
-#posicaoButtonIniciar {
-    position:absolute;
-    bottom:-50px;
-	left:90px;
-}
-
-#buttoniniciar {
-	font:20px;
-	background-color:#DCDCDC; 
-	width:500px;
-	text-align:center;
-}
- 
-#mododepartida {
-	width:400px;
-	float:left;
-	position: absolute;
-	bottom:10%;
-	right: 50%; /* posiciona na metade da tela */
-	margin-right: 25px; /* e retrocede metade da largura */
-}
-
-#selecionarrobo {
-	width:400px;
-	float:left;
-	position:absolute;
-	bottom:10%;
-	left: 50%; /* posiciona na metade da tela */
-	margin-left: 25px; /* e retrocede metade da largura */
-}
-
-table, th, td {
-    border: 2px solid black;
-	padding: 10px;
-	background-color:white;
-}
-
-.fonttitulo{
-	font-size: 30px;
-	font-family: "Open Sans Condensed", sans-serif;
-	text-align: center;
-}
-.fonttitulotabela{
-	font-size: 20px;
-	font-family: "Open Sans Condensed", sans-serif;
-	text-align: center;
-}
-
- 
 #modo {
     font-family: "Open Sans Condensed", sans-serif;
     border-collapse: collapse;
@@ -288,6 +192,7 @@ table, th, td {
     text-align:center;
     margin: 0 auto; /*centralizar tabela*/
     color: white;
+    
 }
 
 #modo td, #modo th {
