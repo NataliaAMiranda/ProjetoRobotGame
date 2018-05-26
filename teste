@@ -1,0 +1,490 @@
+body {
+	font-family: "Open Sans Condensed", sans-serif;
+	background-color: #000000;
+	font-size: 120%;
+}
+
+main h1 { /*onde está a imagem do cabeçalho*/
+	text-align: center;
+	background-color: #000000;
+    vertical-align: middle;
+}
+
+footer { /*rodapé*/
+	background-color: #A9A9A9;
+	color: #000000;
+	position:absolute;
+    bottom:-200px;
+    width:100%;
+}
+
+main a {
+	color: #A9A9A9;
+	font-family:"Open Sans Condensed", sans-serif;
+}
+
+/*
+ * Estilo dos botões
+ * -------------------------------------------------------- */
+.classname {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;a
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:"Open Sans Condensed", sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	font-style:normal;
+	line-height:180px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+    height:180px;
+}
+.classname:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.classname:active {
+	position:relative;
+	top:1px;
+}
+
+input[type=botao] {
+    width: 100%;
+    background-color: #DCDCDC;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+/*
+ * Estilo formulario
+ * -------------------------------------------------------- */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #DCDCDC;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #D3D3D3;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+
+/*
+ * Estilo tabela robos cadastrados
+ * -------------------------------------------------------- */
+
+#customers {
+    font-family: "Open Sans Condensed", sans-serif;
+    border-collapse: collapse;
+    width:85%;
+    text-align:center;
+    margin: 0 auto; /*centralizar tabela*/
+    color: white;
+    
+}
+
+#customers td, #customers th {
+    border: 1px solid white; /*cor da borda*/
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #C0C0C0;} /*cor das linhas impares*/
+
+#customers tr:hover {background-color: #696969;} /*cor que fica quando passa por cima*/
+
+#customers th { /*topinho*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #696969;
+    color: black;
+    font-weight:bold;
+}
+
+
+/*
+ * Estilo tabela historico
+ * -------------------------------------------------------- */
+
+#historico {
+    font-family: "Open Sans Condensed", sans-serif;
+    border-collapse: collapse;
+    width:85%;
+    text-align:center;
+    margin: 0 auto; /*centralizar tabela*/
+    color: white;
+    
+}
+
+#historico td, #historico th {
+    border: 1px solid white; /*cor da borda*/
+    padding: 8px;
+}
+
+#historico tr:nth-child(even){background-color: #C0C0C0;} /*cor das linhas impares*/
+
+#historico tr:hover {background-color: #696969;} /*cor que fica quando passa por cima*/
+
+#historico th { /*topinho*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #696969;
+    color: black;
+    font-weight:bold;
+}
+
+
+/*
+ * Estilo tabela e botão controle de partida
+ * -------------------------------------------------------- */
+#buttoncontrol {
+	font-size:20px;
+	width:400px;
+}
+
+#posicaoTabela {
+	width:400px;
+	float:left;
+	position: absolute;
+	bottom:-345px;
+	left: 50%; /* posiciona na metade da tela */
+	margin-left: -555px; /* e retrocede metade da largura */
+	background-color:white; 
+}
+
+#posicaoButton {
+	background-color:black; 
+	width:400px;
+	float:left;
+	position:absolute;
+	bottom:-390px;
+	left: 50%; /* posiciona na metade da tela */
+	margin-left: 120px; /* e retrocede metade da largura */
+}
+
+ #mapa {
+	background-color:white;
+	height:200px;
+	width:400px;
+	float:left;
+	position:absolute;
+	bottom:-120px;
+	left: 50%; /* posiciona na metade da tela */
+	margin-left: 140px; /* e retrocede metade da largura */
+ }
+
+/*
+ * Estilo tabela modo da partida
+ * -------------------------------------------------------- */
+.cordefundo {
+	background-color: black; 
+}
+
+#posicaoButtonIniciar {
+    position:absolute;
+    bottom:-50px;
+	left:90px;
+}
+
+#buttoniniciar {
+	font:20px;
+	background-color:#DCDCDC; 
+	width:500px;
+	text-align:center;
+}
+ 
+#mododepartida {
+	width:400px;
+	float:left;
+	position: absolute;
+	bottom:10%;
+	right: 50%; /* posiciona na metade da tela */
+	margin-right: 25px; /* e retrocede metade da largura */
+}
+
+#selecionarrobo {
+	width:400px;
+	float:left;
+	position:absolute;
+	bottom:10%;
+	left: 50%; /* posiciona na metade da tela */
+	margin-left: 25px; /* e retrocede metade da largura */
+}
+
+table, th, td {
+    border: 2px solid black;
+	padding: 10px;
+	background-color:white;
+}
+
+.fonttitulo{
+	font-size: 30px;
+	font-family: "Open Sans Condensed", sans-serif;
+	text-align: center;
+}
+.fonttitulotabela{
+	font-size: 20px;
+	font-family: "Open Sans Condensed", sans-serif;
+	text-align: center;
+}
+
+ 
+#modo {
+    font-family: "Open Sans Condensed", sans-serif;
+    border-collapse: collapse;
+    width:85%;
+    text-align:center;
+    margin: 0 auto; /*centralizar tabela*/
+    color: white;
+}
+
+#modo td, #modo th {
+    border: 1px solid white; /*cor da borda*/
+    padding: 8px;
+}
+
+#modo tr:nth-child(even){background-color: #C0C0C0;} /*cor das linhas impares*/
+
+#modo tr:hover {background-color: #696969;} /*cor que fica quando passa por cima*/
+
+#modo th { /*topinho*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #696969;
+    color: black;
+    font-weight:bold;
+}
+
+/*
+ * Estilo tabela selecionar robos
+ * -------------------------------------------------------- */
+
+#selecionar {
+    font-family: "Open Sans Condensed", sans-serif;
+    border-collapse: collapse;
+    width:85%;
+    text-align:center;
+    margin: 0 auto; /*centralizar tabela*/
+    color: white;
+    
+}
+
+#selecionar td, #selecionar th {
+    border: 1px solid white; /*cor da borda*/
+    padding: 8px;
+}
+
+#selecionar tr:nth-child(even){background-color: #C0C0C0;} /*cor das linhas impares*/
+
+#selecionar tr:hover {background-color: #696969;} /*cor que fica quando passa por cima*/
+
+#selecionar th { /*topinho*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #696969;
+    color: black;
+    font-weight:bold;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #DCDCDC;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+
+/*
+ * Estilo checkbox
+ * -------------------------------------------------------- */
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*
+ * Estilo radiobutton
+ * -------------------------------------------------------- */
+/* The container */
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkRadio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input ~ .checkmarkRadio {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadio input:checked ~ .checkmarkRadio {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkRadio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadio input:checked ~ .checkmarkRadio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadio .checkmarkRadio:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
