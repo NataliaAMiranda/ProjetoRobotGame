@@ -1,0 +1,111 @@
+.button1 {padding: 32px 16px;}
+.button2 {padding: 32px 16px;}
+.button3 {padding: 32px 16px;}
+.button4 {padding: 32px 16px;}
+
+H1 { text-align: center }
+
+.button1 {
+  float: center;
+}
+.button2 {
+  float: right;
+}
+.button3 {
+  float: left;
+}
+.button4 {
+  float: center;
+}
+.botaovoltar {
+  background-color: transparent;
+  border:none;
+}
+.botaoalerta{
+  background-color: transparent;
+  border: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2A545F;
+}
+uli {
+	float: left;
+}
+uli a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+uli a:hover {
+	background-color: #111;
+}  
+font { 
+	font-family: "Colibri", "Comic Sans";
+	font-size: 16px;
+	color:white;
+}
+.font2 { 
+  font-family: "Colibri", "Comic Sans";
+	font-size: 20px;
+	color:black;
+}
+strong {
+  font-family: "Colibri", "Comic Sans"
+}
+.active {
+	background-color: grey;
+} 
+.desactive {
+	color: red;
+}
+.bloco {
+	background:rgba(255,255,255,0.6);
+	height: 480px;
+}		
+.fundodiv {
+  background-color: #2A545F;
+  color: white;
+  padding: 10px;
+  opacity: 0.7;
+}
+.tamanho {
+	background-image: url(../Imagens/evr_wallpaper.png);
+	max-width:100%;
+}
+.textoarea { 
+  font-family: "Colibri", "Comic Sans";
+	text-align: center;
+  font-size: 20pt;
+	width: 80px;
+	height: 50px;
+}
+#mapa {
+	height:200px;
+	width:400px;
+	float:left;
+	position:absolute;
+	left: 50%; /* posiciona na metade da tela */
+}
+#posicaodiv {
+	width:400px;
+	float:right;
+	position: absolute;
+	left: 50%; /* posiciona na metade da tela */
+	margin-left: -500px; /* e retrocede metade da largura */ 
+}
+table, th, td {
+  border: 2px solid black;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+}
+.fonttabela{
+	font-size: 18px;
+	font-family: "Colibri", "Comic Sans";
+	text-align: center;
+}

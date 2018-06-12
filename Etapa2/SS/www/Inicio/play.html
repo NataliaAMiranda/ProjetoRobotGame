@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>Sistema Supervisor</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="estiloplay.css">
+		<script type="text/javascript" src="../js/index.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../js/jquery-1.9.1.js"></script>
+	</head>
+
+	<body class="tamanho">
+		<div class="fundodiv">
+			<strong><center><h1> Sistema Supervisor - Modo Manual </h1></center></strong>
+		</div>
+		
+		<ul><strong><font>
+			<uli><a href="index.html">Principal</a></uli>
+			<uli><a href="instrucoes.html">Instruções</a></uli>
+		</font></strong></ul>
+		
+		<hr>
+
+		<div class="bloco">
+			<p>
+				<button class="botaovoltar" name="button5" onclick="javascript: history.go(-1)">
+					<img src="../Imagens/voltar.png" title="voltar" />
+				</button>
+			</p>
+			
+			<p style="align: left">
+				<button hidden="hidden" class="botaoalerta" id="alerta" name="button6">
+					<img src="../Imagens/alerta.png" title="Alerta" />
+				</button> 
+			</p>
+			<p align="center">
+			<input id="buttonCACA" type="submit" align="left" value="Atualiza caças" onclick="retornaFlags()">
+			</p>
+
+			<div id="posicaodiv">
+				<center>
+					<p>
+						<font class="font2">
+							<strong>
+								Digite a quantidade de passos:
+							</strong>
+						</font>
+					</p>
+					
+					<textarea id="passos" class="textoarea"></textarea>
+				</center>
+				
+				<br>
+
+				<p>
+					<center>
+						<button id="button1" onclick="envia(1)">
+							<img src="../Imagens/seta_cima.png" title="Seta para cima" height="50" width="50" />
+				  </button>
+				</center></p>
+				<p><center>
+				  <button id="button2" onclick="envia(2)">
+					  <img src="../Imagens/seta_esquerda.png" title="Seta para esquerda" height="50" width="50" />
+				  </button>
+				  <button id="button4" onclick="envia(4)">
+					  <img src="../Imagens/seta_baixo.png" title="Seta para baixo" height="50" width="50" />
+				  </button>
+				  <button id="button3" onclick="envia(3)">
+					  <img src="../Imagens/seta_direita.png" title="Seta para direita" height="50" width="50" />
+				  </button>
+				</center></p>
+				</div>
+				<table id="mapa">
+				<tr align="center">
+					<td class="font2" colspan="4"><strong>Coordenadas das caças:</strong></td>
+				</tr>
+				<font class="fonttabela">
+				<tr align="center">
+					<td class="fonttabela">CAÇA</td>
+					<td class="fonttabela">(x,y)</td>
+					<td class="fonttabela">CAÇA</td>
+					<td class="fonttabela">(x,y)</td>
+				</tr>
+				<tr align="center">
+					<td class="fonttabela">1</td>
+					<td class="fonttabela" id="caca0"> </td>
+					<td class="fonttabela">2</td>
+					<td class="fonttabela" id="caca1"></td>
+				</tr>
+				<tr align="center">
+					<td class="fonttabela">3</td>
+					<td class="fonttabela" id="caca2"> </td>
+					<td class="fonttabela">4</td>
+					<td class="fonttabela" id="caca3"> </td>
+				</tr>
+				<tr align="center">
+					<td class="fonttabela">5</td>
+					<td class="fonttabela" id="caca4"><output></td>
+					<td class="fonttabela">6</td>
+					<td class="fonttabela" id="caca5"> </td>
+				</tr>
+				<tr align="center">
+					<td class="fonttabela">7</td>
+					<td class="fonttabela" id="caca6"> </td>
+					<td class="fonttabela">8</td>
+					<td class="fonttabela" id="caca7"> </td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+
+<script>
+	retornaFlags();
+</script>
