@@ -196,7 +196,6 @@ class motor(object):
       sleep(2)
       while not self.ts.value():
         angle = self.gy.value()
-        print(str(angle) + " " + self.units)
         self.mC.run_timed(time_sp = 500, speed_sp = 120)
         if angle == 0:
           self.mC.stop(stop_action = "brake")
@@ -204,7 +203,6 @@ class motor(object):
     elif self.dire == 2:
       while not self.ts.value():
         angle = self.gy.value()
-        print(str(angle) + " " + self.units)
         self.mC.run_timed(time_sp = 500, speed_sp = 120)
         if angle == 0:
           self.mC.stop(stop_action = "brake")
@@ -212,7 +210,6 @@ class motor(object):
     elif self.dire == 3:
       while not self.ts.value():
         angle = self.gy.value()
-        print(str(angle) + " " + self.units)
         self.mC.run_timed(time_sp = 500, speed_sp = -120)
         if angle == 0:
           self.mA.stop(stop_action = "brake")
